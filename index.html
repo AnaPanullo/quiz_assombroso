@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jogo de Cartas Educativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="game-container">
+
+    <div class="card">
+
+      <div class="card">
+  
+  <!-- CAPA -->
+  <div id="card-cape">
+    <button id="btn-iniciar">Iniciar</button>
+  </div>
+
+  <div class="card-inner">
+
+        <!-- FRENTE -->
+        <div class="card-front">
+          <h2 id="pergunta"></h2>
+
+          <div class="opcoes">
+            <button class="opcao" data-opcao="0"></button>
+            <button class="opcao" data-opcao="1"></button>
+            <button class="opcao" data-opcao="2"></button>
+          </div>
+
+          <p id="feedback"></p>
+        </div>
+
+        <!-- VERSO -->
+        <div class="card-back">
+          <h2 id="resposta-texto"></h2>
+          <img id="resposta-imagem" />
+          <button id="btn-proximo">Próximo</button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
